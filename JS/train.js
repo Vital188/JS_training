@@ -170,4 +170,16 @@ if (sarasas_1.length !== sarasas_3.length) {
     console.log('pomidoras');
 } else { console.log ('bandykyte dar karta');}
 
+if (sarasas_1.length <= sarasas_2.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_2.length <= sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_1.length <= sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta')}
+
 
