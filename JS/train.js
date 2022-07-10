@@ -27,8 +27,8 @@ console.log(45);
 console.log('Labas rytas, mano tevyne Lietuva');
 
 const sarasas_1 = [0,4,6,8,10];
-const sarasas_2 = [11,22,33,44,55];
-const sarasas_3 = [1,4,6,8,15];
+const sarasas_2 = [11,22,33,44,55,44,77];
+const sarasas_3 = [1,4,6,8,15,13];
 
 console.log(sarasas_1);
 console.log(sarasas_2);
@@ -49,4 +49,125 @@ console.log(pirmas,antras,trecias);
 console.log(d,e,f);
 
 console.log(f,g,d,g,e,g);
+
+console.clear()
+
+if (a==b) {
+    console.log('pomidoras');
+} 
+else {
+    console.log("bandykite dar karta");
+}
+ if (a > b) {
+    console.log('pomidoras');}
+    else {
+        console.log('bandykite dar karta');
+}
+
+if (a < b) {
+console.log('pomidoras');}
+else {
+console.log('bandykite dar karta');
+}
+
+if (a !== b) {
+console.log('pomidoras');}
+else {
+ console.log('bandykite dar karta');
+}
+ 
+if (a >= b) {
+console.log('pomidoras');}
+else {
+console.log('bandykite dar karta');
+}
+
+if (a <= b) {
+console.log('pomidoras');}
+else {
+console.log('bandykite dar karta');}
+
+console.log(pirmas.length);
+console.log(antras.length);
+console.log(trecias.length);
+
+if (pirmas.length > antras.length) {
+    console.log('pomidoras');
+} 
+else {
+    console.log("bandykite dar karta");
+}
+ if (pirmas.length < antras.length) {
+    console.log('pomidoras');}
+    else {
+        console.log('bandykite dar karta');
+}
+
+if (pirmas.length == antras.length) {
+console.log('pomidoras');}
+else {
+console.log('bandykite dar karta');
+}
+
+if (pirmas.length !== antras.length) {
+console.log('pomidoras');}
+else {
+ console.log('bandykite dar karta');
+}
+ 
+if (pirmas.length >= antras.length) {
+console.log('pomidoras');}
+else {
+console.log('bandykite dar karta');
+}
+
+if (pirmas.length <= antras.length) {
+console.log('pomidoras');}
+else {
+console.log('bandykite dar karta');}
+
+console.log(sarasas_1.length);
+console.log(sarasas_2.length);
+console.log(sarasas_3.length);
+
+console.log("_______________________________");
+
+console.clear();
+
+if (sarasas_1.length > sarasas_2.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_2.length > sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_1.length > sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_1.length < sarasas_2.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_2.length < sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_1.length < sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_1.length >= sarasas_2.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_2.length === sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
+if (sarasas_1.length !== sarasas_3.length) {
+    console.log('pomidoras');
+} else { console.log ('bandykyte dar karta');}
+
 
