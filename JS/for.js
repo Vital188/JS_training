@@ -69,10 +69,29 @@ if (pol !==0 && pol % 1 ==0) {
     console.log(pol);
 }}
 
-for (let i = 0; i < 11; i++) {
-    let pol = i/3;
-    if (pol !==0 && pol % 1 ==0) {
-    pol++;}
+console.clear()
 
-console.log(pol)        
-    }
+ 
+    
+let sizes = 0;
+
+for (let i = 0; i <= 11; i++) {
+    pul = i/5;
+    if (pul % 1 ===0) {   sizes = pul++;    }}
+    sizess = sizes + 1;
+console.log(sizess)   ;   
+
+console.clear()
+console.clear()
+let sam = 0;
+
+for (let i = 0; i < 11; i++) 
+    if (Number.isInteger (i/7)) {sam++;};
+console.log(sam)      
+
+let pu = 0;
+
+for (let i = 0; i < 11; i++) {
+     let pul = i/5;
+        if (pul % 1 == 0) {pu++ ;}}; 
+    console.log(pu)
