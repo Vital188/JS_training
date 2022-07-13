@@ -26,12 +26,53 @@ console.clear()
 
 console.count(47*2);
 
-let marks = 0;
+let marks = [7, 8, 11, 15, 14];
 let mark = 0;
+let suma = 0;
 
-for (let i = 0; i < 9; i++) {
-const grade = mark[i]
-marks += grade;
+for (let i = 0; i < marks.length; i++) {
+mark += marks[i];  
+suma += marks[i];}
+
+console.log('vidurkis =',suma/marks.length);
+console.log(mark);
+console.log(suma);
+
+console.clear();
+
+function isrinktiRaides(pirmas, antras)  {
+
+if (typeof pirmas !== 'string') {
+    return "Pirmasis kintamasis yra netinkamo.";
+}
+if (pirmas === "" || pirmas.length > 100) {
+    return "Pirmasis kintamasis yra netinkamo tipo.";
+}
+if (typeof antras !== 'number'|| !isFinite(antras)) {
+    return "Antrasis kintamasis yra netinkamo tipo.";
+}
+if (antras === 0 || antras % 1 !== 0) { 
+    return "Antrasis kintamasis turi būti didesnis už nulį.";
 }
 
-console.log(grade);
+if (pirmas.length < antras) {
+    return "Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį";
+}
+
+
+let result = '';
+
+ for (let i=antras-1; i < pirmas.length; i += antras) {
+ result += pirmas[i];}
+
+ return result
+
+}
+
+console.log(isrinktiRaides("abcdefghijkl", 3 ));
+console.log(isrinktiRaides("abcdefg", 2 ));
+console.log( isrinktiRaides( "abcdefghijkl", 3 ) );
+console.log( isrinktiRaides( "abc", 0 ) );
+console.log( isrinktiRaides( "abc", 4 ) );
+console.log( isrinktiRaides( 1561, 2 ) );  
+
