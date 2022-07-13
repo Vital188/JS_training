@@ -183,3 +183,10 @@ if (sarasas_1.length <= sarasas_3.length) {
 } else { console.log ('bandykyte dar karta')}
 
 
+let frut = 0;
+let numberAsStrin = 0;
+for (let i = 0; i < 25; i++) {
+     frut = [i];
+     
+}
+console.log(frut);

@@ -46,7 +46,7 @@ function skaitmenuKiekisSkaiciuje(goor) {
     return size;
 }
 
-
+console.log(numberAsString[i]);
 console.log(skaitmenuKiekisSkaiciuje(4.545));
 
 
