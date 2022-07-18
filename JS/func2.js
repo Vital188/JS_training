@@ -76,3 +76,36 @@ console.log( isrinktiRaides( "abc", 0 ) );
 console.log( isrinktiRaides( "abc", 4 ) );
 console.log( isrinktiRaides( 1561, 2 ) );  
 
+
+console.clear();
+
+let number = 0;
+
+function index(array, n){
+if (array.length <= n) { return -1;}
+
+for (let i=0; i <= n; i ++) {
+number = array[i];}
+return number**n;}
+
+console.log(index([2, 6, 5], 3));
+console.log(number);
+
+console.clear();
+const abc = "Position of alphabet:";
+let num=0;
+function position(letter){
+let alphabet ='abcdefghijklmnopqrstuvwxyz';
+for (let i=1; i <= alphabet.length; i++) {
+  num = alphabet.indexOf(letter)+1;}
+  return "'position of alphabet:" + num + "'";
+
+}
+
+console.log(position('v'));
+
+console.clear();
+
+
+    
+
