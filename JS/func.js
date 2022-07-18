@@ -61,3 +61,5 @@ if (alsymbols.indexOf(Symbol) >=0) {samm++}
 return samm;
 }
 console.log(kablelis('...'));
+
+console.clear();
