@@ -107,5 +107,56 @@ console.log(position('v'));
 console.clear();
 
 
-    
+function opposite(number) {
+let post = 0;
+if (number ===0) { return 0};
+if (typeof number === 'number' || number !==0) {post = number * -1;};
+return post
+} 
 
+console.log(opposite(-3.33333));
+
+console.clear();
+
+function sum (numb) {
+if (typeof numb === 'number') {return 0};
+
+let suma = 0;
+for (let i=0; i < numb.length; i++) {
+    suma += numb[i];}
+return suma;
+}
+
+console.log(sum([4, 7]));
+
+
+let size =0;
+function filter_list(l) {
+for (let i=0; i < l.length; i++) {
+if (typeof l === 'number') {size = l[i]};}
+return size;
+}
+console.log(filter_list([5, 0, 'a', -5, 'f', 110, 15]));
+
+console.clear()
+
+
+function positiveSum(arr)  {
+    let sum = 0;
+    for (let i=0; i < arr.length; i++) {
+    if (arr[i] > 0) {sum += arr[i];}}
+    return sum
+    }
+
+console.log(positiveSum([1,-2,3,4,5]));
+
+console.clear()
+
+function maps(x){
+for (let i=0; i < x.length; i = i*i){
+let rezultat = 0;
+rezultat = x[i];}
+return rezultat
+}
+
+console.log(maps([3,4,5]));

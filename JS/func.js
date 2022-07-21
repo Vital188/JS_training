@@ -46,9 +46,9 @@ function skaitmenuKiekisSkaiciuje(goor) {
     return size;
 }
 
-console.log(numberAsString[i]);
 console.log(skaitmenuKiekisSkaiciuje(4.545));
 
+console.clear();
 
 function kablelis(dog) {
 
@@ -56,10 +56,11 @@ const alsymbols = ".";
 
 let samm = 0;
 
-if (alsymbols.indexOf(Symbol) >=0) {samm++}
+if (dog.length >=0) {samm++};
 
 return samm;
 }
 console.log(kablelis('...'));
 
-console.clear();
+
+
