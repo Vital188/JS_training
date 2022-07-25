@@ -153,10 +153,9 @@ console.log(positiveSum([1,-2,3,4,5]));
 console.clear()
 
 function maps(x){
-for (let i=0; i < x.length; i = i*i){
-let rezultat = 0;
-rezultat = x[i];}
-return rezultat
+const maps = x.map(x => x * 2);
+
+return maps;
 }
 
-console.log(maps([3,4,5]));
+console.log(maps([4, 1, 1, 1, 4]));
