@@ -159,3 +159,43 @@ return maps;
 }
 
 console.log(maps([4, 1, 1, 1, 4]));
+
+console.clear()
+
+function noSpace(x){{
+    x= x.replace(/\s/g,''); 
+     }
+return x
+}
+
+console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
+
+console.clear()
+
+let summa = 0;
+let classPointslength = 0;
+let vidurkis = 0;
+function betterThanAverage(classPoints, yourPoints) {
+ {
+for (let i=0; i < classPoints.length; i++)
+summa += classPoints[i];
+summa = summa + yourPoints;
+classPointslength = classPoints.length + 1;
+vidurkis = summa/classPointslength;
+}
+if (yourPoints >= vidurkis) {return true}
+else {return false;}
+}
+
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69));
+console.log(summa);
+console.log(vidurkis);
+console.log(classPointslength);
+
+console.clear();
+
+const spalvos = ('color: #655652 #PP00PP #LL00CV #LL00CC #ffffff #ccffff #99ff66 #66ff33 #99ff00 #66ff33 #990000 ');
+
+console.log(spalvos);
+console.log('hello world', spalvos);
+console.log('%c hello world', 'color: #99ff66; font-size: 18px  \x1b[0m');
