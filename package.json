@@ -10,6 +10,7 @@
     "func": "nodemon ./js/func.js",
     "func2": "nodemon ./js/func2.js",
     "for": "nodemon ./js/for.js",
+    "practise": "nodemon ./js/practise.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

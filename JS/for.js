@@ -85,13 +85,13 @@ console.clear()
 console.clear()
 let sam = 0;
 
-for (let i = 0; i < 11; i++) 
+for (let i = 0; i < 21; i++) 
     if (Number.isInteger (i/7)) {sam++;};
 console.log(sam)      
 
 let pu = 0;
 
-for (let i = 0; i < 11; i++) {
+for (let i = 1; i < 11; i++) {
      let pul = i/5;
         if (pul % 1 == 0) {pu++ ;}}; 
-    console.log(pu)
+        console.log(pu)

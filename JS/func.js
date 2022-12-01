@@ -62,5 +62,23 @@ return samm;
 }
 console.log(kablelis('...'));
 
+console.clear()
+
+let aa = 2;
+let bb = 3;
+let cc = 5;
+
+function daugyba(aa,bb){
+let result = aa*bb;
+return result;
+}
+
+console.log(daugyba(5,10));
+console.log(daugyba(aa,bb));
+console.log(daugyba(cc,bb));
+console.log("rezultatai:", daugyba(aa,bb));
+console.log("rezultatai:", daugyba(aa,cc));
+console.log("rezultatai:", daugyba(cc,bb));
+
 
 
