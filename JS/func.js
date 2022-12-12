@@ -80,5 +80,41 @@ console.log("rezultatai:", daugyba(aa,bb));
 console.log("rezultatai:", daugyba(aa,cc));
 console.log("rezultatai:", daugyba(cc,bb));
 
+console.clear()
 
+function hasSurvived(attackers, defenders){
+
+    
+ 
+
+    const sum = attackers.reduce((accumulator, value) => {
+        return accumulator + value;
+      }, 0);
+
+ 
+
+      const suma = defenders.reduce((accum, val) => {
+        return accum + val;
+      }, 0);
+     
+     const ap = sum - suma;
+
+     
+
+
+    if (attackers.join() < defenders.join())
+       { return 'true'}
+    if (attackers.join() > defenders.join())
+    { return 'false'}
+    if (attackers.join() == defenders.join() && ap >= 0 )
+    { return sum}
+    else 
+    { return suma}
+ 
+};
+
+console.log(hasSurvived([1, 1, 1, 6], [1, 1, 2, 5]));
+
+
+  
 
