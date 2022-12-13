@@ -84,36 +84,37 @@ console.clear()
 
 function hasSurvived(attackers, defenders){
 
-    
- 
-
     const sum = attackers.reduce((accumulator, value) => {
         return accumulator + value;
       }, 0);
-
- 
 
       const suma = defenders.reduce((accum, val) => {
         return accum + val;
       }, 0);
      
      const ap = sum - suma;
+     let pot=0;
+     let sop=0;
 
-     
+     for(i=0; i <attackers.length; i++) {
+     if (attackers[i]> defenders[i]) {pot++};
+     if (attackers[i]< defenders[i]) {sop++};
+      }
 
-
-    if (attackers.join() < defenders.join())
-       { return 'true'}
-    if (attackers.join() > defenders.join())
-    { return 'false'}
-    if (attackers.join() == defenders.join() && ap >= 0 )
-    { return sum}
+    if (pot < sop)
+       { return true}
+    if (pot > sop)
+    { return false}
+    if (pot == sop && ap > 0 )
+    { return false}
     else 
-    { return suma}
- 
+    { return true}
+
 };
 
-console.log(hasSurvived([1, 1, 1, 6], [1, 1, 2, 5]));
+console.log(hasSurvived([2, 9, 9, 7, 1], [1, 1, 5, 8, 10]));
+
+console.clear();
 
 
   
