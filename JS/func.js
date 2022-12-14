@@ -211,40 +211,55 @@ console.clear();
 
 // parse("iiisdoso") => [ 8, 64 ]
 
-// function parse( data )
-// {
-//   rezultatas = 0;
-//   rez = '';
-//   re = '';
-//   for(i=0; i < data.length; i++) {
-//       if (data[i] === 'i') { rez++, rezultatas++;}
-//       else if (data[i] === 'd') {rez++,  rezultatas--;}
-//      else if (data[i] === 's') {rez++,  rezultatas **=2;}
-//      else if (data[i] === 'o') {  rezultatas}
+function parse( data )
+{
+  rezultatas = 0;
+  rezull = [];
+  rez = '';
+  re = '';
+  for(i=0; i < data.length; i++) {
+      if (data[i] === 'i') { rez++, rezultatas++;}
+      else if (data[i] === 'd') {rez++,  rezultatas--;}
+     else if (data[i] === 's') {rez++,  rezultatas **=2;}
+     else if (data[i] === 'o') {  rezull.push(rezultatas)}
      
-// }
-// return [ rez, rezultatas]
-// }
-
-
-parse = data => {
-  let array = [];
-  let val = 0;
-  
-  const options = {
-    i: () => val++,
-    d: () => val--,
-    s: () => val **= 2, 
-    o: () => array.push(val)
-  }
-  
-  for (i = 0; i < data.length; i++) {
-    let character = data[i];
-    let command = options[character];
-    command();
-  }
-  
-  return array;
+}
+return rezull
 }
 
+
+// parse = data => {
+//   let array = [];
+//   let val = 0;
+  
+//   const options = {
+//     i: () => val++,
+//     d: () => val--,
+//     s: () => val **= 2, 
+//     o: () => array.push(val)
+//   }
+  
+//   for (i = 0; i < data.length; i++) {
+//     let character = data[i];
+//     let command = options[character];
+//     command();
+//   }
+  
+//   return array;
+// }
+
 console.log(parse("dooisodo"))
+console.log(parse("iiisdoso"))
+
+console.clear();
+
+function isInStrictMode(pat) {
+  "use strict";
+  return pat
+  }
+
+
+console.log(isInStrictMode(true) )
+
+
+  
