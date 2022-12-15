@@ -253,13 +253,21 @@ console.log(parse("iiisdoso"))
 
 console.clear();
 
-function isInStrictMode(pat) {
-  "use strict";
-  return pat
-  }
+// function isInStrictMode() {
+//   "use strict";
+//   return `${isInStrictMode()}` 
+//   }
 
 
 console.log(isInStrictMode(true) )
 
+function isInStrictMode(pat) {
+  "use strict";
+function nested() {
+ return pat === true ? true : false
+  }
+return nested()
+}
 
+console.log(isInStrictMode(false))
   
