@@ -270,4 +270,51 @@ return nested()
 }
 
 console.log(isInStrictMode(false))
+
+console.clear();
+
+let humanYearsCatYearsDogYears = function(humanYears) {
+  let human = 0;
+  let dog = 0;
+  let cat = 0;
+
+  if (humanYears >= 1) {human = humanYears};
+  if (humanYears == 1) {dog = humanYears * 15}
+  else if (humanYears == 2) {dog = 15 + 9}
+  else if (humanYears > 2) {dog = 5 * (humanYears - 2) + 15 + 9}
+
+  if (humanYears == 1) {cat = humanYears * 15}
+  else if (humanYears == 2) {cat = 15 + 9}
+  else if (humanYears > 2) {cat = 4 * (humanYears - 2) + 15 + 9}
+
+  return [human, cat, dog];
+}
   
+console.log(humanYearsCatYearsDogYears(2))
+
+console.clear();
+
+function cupAndBalls(b, arr){
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i][0] == b) {b = arr[i][1]}
+  else if (arr[i][1] == b) {b = arr[i][0]}
+
+}
+return b
+};
+
+console.clear();
+
+function strictEqual(b) {
+  let answ = 0;
+  if ( b > 0) { answ = b * b}
+  return answ
+}
+
+console.log(strictEqual(10))
+
+console.clear();
+
+function race(v1, v2, g) {
+  let time = 
+}
