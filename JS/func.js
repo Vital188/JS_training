@@ -313,8 +313,13 @@ function strictEqual(b) {
 
 console.log(strictEqual(10))
 
-console.clear();
+// console.clear();
 
-function race(v1, v2, g) {
-  let time = 
-}
+// // function race(v1, v2, g) {
+// //   let time = 
+// // }
+
+// console.clear();
+
+
+
