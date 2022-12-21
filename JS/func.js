@@ -30,7 +30,7 @@ console.clear();
 
 function skaitmenuKiekisSkaiciuje(goor) {
     if (typeof goor !== 'number' && !isFinite(goor)) 
-       {return 'Pateikta netinkamo tipo reikšmė.';
+       {return 'gadeikta netinkamo tipo reikšmė.';
     }
     const allowedSymbols = '0123456789';
     const numberAsString = ' ' + goor;
@@ -261,10 +261,10 @@ console.clear();
 
 console.log(isInStrictMode(true) )
 
-function isInStrictMode(pat) {
+function isInStrictMode(gad) {
   "use strict";
 function nested() {
- return pat === true ? true : false
+ return gad === true ? true : false
   }
 return nested()
 }
@@ -324,12 +324,12 @@ console.log(strictEqual(10))
 // function SubtractSum(n){
 //   let sum = 0;
 //   let sap = 'cherry';
-//   let pat = n;
+//   let gad = n;
 //   let del = 0
 //    while (del > 101) {
-//     sum += pat % 10;
-//     pat = Math.floor(n / 10);
-//     del = pat - sum;
+//     sum += gad % 10;
+//     gad = Math.floor(n / 10);
+//     del = gad - sum;
 //   }  
 // if (del == 1 || del == 3 || del == 24 || del == 26 || del == 47 || del == 49 || del ==68 || del == 70 || del == 91 || del == 93) {sap = 'kiwi'}
 // else if (del == 2 || del == 21 || del == 23 || del == 42 || del == 44 || del == 46 || del == 65 || del == 67 || del == 69 || del == 88) {sap = 'pear'}
@@ -349,11 +349,11 @@ console.log(strictEqual(10))
 function SubtractSum(n){
   let sum = 0;
   let sap = 'cherry';
-  pat = n;
+  gad = n;
   let del = 0
-  while (pat) {
-    sum += pat % 10;
-    pat = Math.floor(pat / 10);
+  while (gad) {
+    sum += gad % 10;
+    gad = Math.floor(gad / 10);
  }
     do {
     del = n - sum;
@@ -411,3 +411,57 @@ function dontGiveMeFive(start, end) {
 }
 
 console.log(dontGiveMeFive(2,615))
+
+console.clear()
+
+function fourSeven(n){
+let pot = 0;
+while (n == 4 || n ==7) {
+  
+pot = 28/n;
+  
+return pot;}
+return 0 + pot
+}
+
+console.log(fourSeven(4))
+console.log(fourSeven(7))
+console.log(fourSeven(52))
+
+console.clear();
+
+
+function betterThanAverage(classPoints, yourPoints) {
+let summa = 0;
+let classPointslength = 0;
+let vidurkis = 0;
+let oleg = '';
+if (Array.isArray())  {return false}  {
+for (let i=0; i < classPoints.length; i++)
+summa += classPoints[i];
+summa = summa + yourPoints;
+classPointslength = classPoints.length + 1;
+vidurkis = summa/classPointslength;
+
+yourPoints >= vidurkis ? oleg = true : oleg = false;}
+return oleg
+}
+
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69))
+
+console.clear();
+
+function squareDigits(num){
+  gad = num;
+  let sumad = [];
+  while (gad) {
+   
+    sumad += gad % 10;
+    gad = Math.floor(gad / 10); 
+ }
+ return sumad;
+}
+
+console.log(squareDigits(32125));
+
+
