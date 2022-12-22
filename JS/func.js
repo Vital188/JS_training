@@ -628,16 +628,16 @@ function stray(numbers) {
     uniqueArray = Array.from(new Set(numbers));
     // uniqueArray = Array.from(karl);
   }
-    // if (numbers.length =< 2) {ruzu = undefined}
-     if (uniqueArray[0] * petr + uniqueArray[1] === karl) {
-      ruzu = uniqueArray[1];
-    } else {
-      ruzu = uniqueArray[0];
-    }
+  // if (numbers.length =< 2) {ruzu = undefined}
+  if (uniqueArray[0] * petr + uniqueArray[1] === karl) {
+    ruzu = uniqueArray[1];
+  } else {
+    ruzu = uniqueArray[0];
+  }
   return ruzu;
 }
 
-console.log(stray([0,0,0,-5,0]));
+console.log(stray([0, 0, 0, -5, 0]));
 
 // for (let i = 0; i < arr.length; i++) {
 //   if (arr[i][0] == b) {
@@ -649,6 +649,60 @@ console.log(stray([0,0,0,-5,0]));
 // return b;
 // }
 
+console.clear();
+
+function maskify(cc) {
+  let povel = "";
+  let angr = "";
+  let caple = "";
+  let gabr = "";
+  povel = cc.slice(0, -4);
+  angr = cc.slice(-4);
+  caple = povel.replaceAll(/[0123456789qwertyuiopasdfghjklzxcvbnm]/g, "#");
+  gabr = caple.concat(angr);
+  if (cc.length <= 4) {
+    gabr = cc;
+  }
+  return gabr;
+}
+
+console.log(maskify("45616"));
 
 console.clear();
 
+function filter_list(l) {
+ let bb = [];
+ let aa = [];
+ bb = l.filter(
+  element => typeof element === 'number'
+);
+aa = bb.filter(el => el >= 0);
+ return aa
+}
+
+console.log(filter_list([-5 ,1,'a','b','5',0,15]))
+
+console.clear();
+
+function shortcut (string) {
+  let bot = '';
+  bot = string.replaceAll(/[euioa]/g, "");
+  return bot
+}
+
+console.log(shortcut('returning'))
+
+console.clear();
+
+ function summation (num) {
+  let gap = '';
+
+  while (num == 0) {
+  gap += "<br>The number is " + num;
+  num = num-1;
+}
+return gap
+}
+
+
+console.log(summation(8));
