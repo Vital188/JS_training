@@ -695,14 +695,15 @@ console.log(shortcut('returning'))
 console.clear();
 
  function summation (num) {
-  let gap = '';
-
-  while (num == 0) {
-  gap += "<br>The number is " + num;
+  let bolt = 0;
+  // let gap = [];
+  while (num > 0) {
+  // gap += num 
+  bolt += Number(num);
   num = num-1;
 }
-return gap
+return bolt
 }
 
-
 console.log(summation(8));
+
