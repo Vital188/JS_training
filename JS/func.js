@@ -749,42 +749,47 @@ console.log(grow([1, 2, 3, 4]))
 
 console.clear();
 
+// the alphabet: 'abcdefghijklmnopqrstuvwxyz'
 function findTheNumberPlate(customerID){
-customerid = customerID +1;
-let borat = Array.from(String(customerid))
-let id = 0;
-let tarpine = 0;
-const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-first = a;
-second = a;
-third = a;
- for (let i = 0; i <borat.length; i++){
- if (borat.length == 1) {borat = 0 + 0 + borat[0]}
- else if (borat.length == 2) {borat = 0 + borat[0] + borat[1]}
- else  if (borat.length == 3) {borat = borat[0] + borat[1] + borat[2] }
- else  if (borat.length == 4) {borat = borat[1] + borat[2] + borat[3] }
- else  if (borat.length == 5) {borat = borat[2] + borat[3] + borat[4] }
-
-}
-
-for (let i=0; i < alphabet.length; i++) {
-if (customerID > 1 && customerID < 998) {id = 'aaa' + borat}
-else if (customerID > 999 && customerID < 26000) {
-  first = Math.floor(customerID/1000);
-id = alphabet[first] + 'aa' + borat}
-else if (customerID > 26000 && customerID < 676000) {
-  second = Math.floor(customerID/26000);
-  tarpine = (customerID) - second*26000 ;
-  first = Math.floor(tarpine/1000)
-id = alphabet[first] + alphabet[second] + 'a' + borat}
-else if (customerID > 676000 && customerID < 676000) {
-  second = Math.floor(customerID/26000);
-  tarpine = (customerID) - second*26000 ;
-  first = Math.floor(tarpine/1000)
-id = alphabet[first] + alphabet[second] + 'a' + borat}
-}
-
- return id
-}
-
-console.log(findTheNumberPlate(43056))
+  customerid = customerID + 1 + Math.floor(customerID/999);
+  let borat = Array.from(String(customerid))
+  let id = 0;
+  const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  first = '';
+  second = '';
+  third = '';
+   for (let i = 0; i <borat.length; i++){
+   if (borat.length == 1) {borat = 0 + 0 + borat[0]}
+   else if (borat.length == 2) {borat = 0 + borat[0] + borat[1]}
+   else  if (borat.length == 3) {borat = borat[0] + borat[1] + borat[2] }
+   else  if (borat.length == 4) {borat = borat[1] + borat[2] + borat[3] }
+   else  if (borat.length == 5) {borat = borat[2] + borat[3] + borat[4] }
+   else  if (borat.length == 6) {borat = borat[3] + borat[4] + borat[5] }
+   else  if (borat.length == 7) {borat = borat[4] + borat[5] + borat[6] }
+   else  if (borat.length == 8) {borat = borat[5] + borat[6] + borat[7] }
+   else  if (borat.length == 9) {borat = borat[6] + borat[7] + borat[8] }
+  }
+  
+  for (let i=0; i < alphabet.length; i++) {
+  if (customerID > 1 && customerID < 999) {id = 'aaa' + borat}
+  else if (customerID > 999 && customerID < 25975) {
+    first = Math.floor(customerID/999);
+  id = alphabet[first] + 'aa' + borat}
+  else if (customerID > 25975 && customerID < 675324) {
+    second = Math.floor(customerID/25975);
+    tarpine = (customerID) - second*25975 ;
+    first = Math.floor(tarpine/999)
+  id = alphabet[first] + alphabet[second] + 'a' + borat}
+  else if (customerID > 675324 && customerID <= 17558423) {
+    third = Math.floor(customerID/675324)
+    tarpine2 = (customerID) - third*675324
+    second = Math.floor(tarpine2/25974)
+    tarp = (customerID) - third*675324
+    tarpine = (tarp) - second*25974
+    first = Math.floor(tarpine/999)
+  id = alphabet[first] + alphabet[second] + alphabet[third] + borat}
+  }
+   return id
+  }
+  
+console.log(findTheNumberPlate(17558423))
