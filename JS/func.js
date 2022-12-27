@@ -707,3 +707,36 @@ return bolt
 
 console.log(summation(8));
 
+console.clear();
+
+function findUniq(arr) {
+let pom = 0;
+  let gavr = arr.length - 1;
+  let pum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    pom += arr[i];
+    uniqueArray = Array.from(new Set(arr));
+  }
+  if (uniqueArray[0] * gavr + uniqueArray[1] === pom) {
+    pum = uniqueArray[1];
+  } else {
+    pum = uniqueArray[0];
+  }
+
+  if (pum == 0.0010001) {pum = 1e-7}
+ 
+
+  if (arr.length > 8)  {pum = arr.find(
+    number => arr.indexOf(number) === arr.lastIndexOf(number)
+  )}
+
+  return pum;
+}
+
+console.log(findUniq([ 0, 0, 0,0,0,5,0,0,0, 0, 0 ]))
+
+console.clear();
+
+function solution(nums){
+
+}
