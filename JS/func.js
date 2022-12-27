@@ -737,6 +737,54 @@ console.log(findUniq([ 0, 0, 0,0,0,5,0,0,0, 0, 0 ]))
 
 console.clear();
 
-function solution(nums){
+function grow(x){
+let roms = 1;
+  for (let i = 0; i < x.length; i++) {
+    roms = roms * x[i];
+}
+return roms
+}
+
+console.log(grow([1, 2, 3, 4]))
+
+console.clear();
+
+function findTheNumberPlate(customerID){
+customerid = customerID +1;
+let borat = Array.from(String(customerid))
+let id = 0;
+let tarpine = 0;
+const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+first = a;
+second = a;
+third = a;
+ for (let i = 0; i <borat.length; i++){
+ if (borat.length == 1) {borat = 0 + 0 + borat[0]}
+ else if (borat.length == 2) {borat = 0 + borat[0] + borat[1]}
+ else  if (borat.length == 3) {borat = borat[0] + borat[1] + borat[2] }
+ else  if (borat.length == 4) {borat = borat[1] + borat[2] + borat[3] }
+ else  if (borat.length == 5) {borat = borat[2] + borat[3] + borat[4] }
 
 }
+
+for (let i=0; i < alphabet.length; i++) {
+if (customerID > 1 && customerID < 998) {id = 'aaa' + borat}
+else if (customerID > 999 && customerID < 26000) {
+  first = Math.floor(customerID/1000);
+id = alphabet[first] + 'aa' + borat}
+else if (customerID > 26000 && customerID < 676000) {
+  second = Math.floor(customerID/26000);
+  tarpine = (customerID) - second*26000 ;
+  first = Math.floor(tarpine/1000)
+id = alphabet[first] + alphabet[second] + 'a' + borat}
+else if (customerID > 676000 && customerID < 676000) {
+  second = Math.floor(customerID/26000);
+  tarpine = (customerID) - second*26000 ;
+  first = Math.floor(tarpine/1000)
+id = alphabet[first] + alphabet[second] + 'a' + borat}
+}
+
+ return id
+}
+
+console.log(findTheNumberPlate(43056))
