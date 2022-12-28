@@ -793,3 +793,16 @@ function findTheNumberPlate(customerID){
   }
   
 console.log(findTheNumberPlate(17558423))
+
+console.clear();
+
+function saleHotdogs(n){
+  let rezultat = 0;
+  if ( n < 5) { rezultat =  n * 100}
+  else if (n >= 5 && n < 10 ) { rezultat = n * 95}
+  else if (n >=10) {rezultat = n * 90}
+
+  return rezultat
+}
+
+console.log(saleHotdogs(10))
