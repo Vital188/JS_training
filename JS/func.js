@@ -806,3 +806,16 @@ function saleHotdogs(n){
 }
 
 console.log(saleHotdogs(10))
+
+console.clear();
+
+function solution(nums){
+  let answer = []
+ if (nums == 0 || nums == null) {nums = answer}
+nums.sort(function(a, b){return a - b});
+return nums
+}
+
+console.log(solution([0]))
+
+console.clear();
