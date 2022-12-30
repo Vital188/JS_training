@@ -819,3 +819,35 @@ return nums
 console.log(solution([0]))
 
 console.clear();
+
+function createDict(keys, values){
+  let opel = [];
+  let opelis = '';
+  for (let i=0; i < keys.length; i++) {
+  for (let i=0; i < values.length; i++) {
+ if (values.length == keys.length) {opel += keys[i] + ':' + values[i] }
+ else if (values.length > keys.length) {values[i] = null}
+
+opelis += keys[i] + ';' + values[i] + ',';
+}
+ return opel
+}
+}
+
+console.log((createDict(['a', 'b', 'c'], [1, 2, 3])))
+
+console.clear()
+
+function changer(str) { 
+papik  = Array.from(str)
+let oleg = '';
+let papikian = 0;
+const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+alphabet.map((index) => {
+  papikian += papik[index] })
+ 
+
+return papik
+}
+
+console.log(changer('Cat30'))
