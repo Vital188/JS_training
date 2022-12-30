@@ -810,8 +810,6 @@ console.log(saleHotdogs(10))
 console.clear();
 
 function solution(nums){
-  let answer = []
- if (nums == 0 || nums == null) {nums = answer}
 nums.sort(function(a, b){return a - b});
 return nums
 }
@@ -851,3 +849,18 @@ return papik
 }
 
 console.log(changer('Cat30'))
+
+console.clear()
+
+var flatten = function (array){
+arrayt = array.flat();
+  return arrayt// TODO: Program me
+}
+
+console.log(flatten([[[3], [4], [5]], [9], [9], [8], [[1, 2, 3]]]))
+
+console.clear();
+
+function solution(str, ending){
+  // TODO: complete
+}
