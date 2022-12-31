@@ -862,5 +862,26 @@ console.log(flatten([[[3], [4], [5]], [9], [9], [8], [[1, 2, 3]]]))
 console.clear();
 
 function solution(str, ending){
-  // TODO: complete
+let pov = '';
+let pova = 0;
+let gg = String(ending);
+pova = gg.length;
+pov = str.slice(-(pova));
+if (pova == 0) {bart = true}
+else if (pov == ending) {bart = true}
+else {bart = false}
+return bart
 }
+
+console.log(solution('cded', ''))
+
+console.clear();
+function createPhoneNumber(numbers){
+  for (i=0; i<numbers.length; i++){
+    phone = numbers[2] && numbers[6] ;
+  //   phone = (numbers[0][1][2]) + '' + numbers[3][4][5]+ '-' + numbers[6][7][8][9];
+  }
+  return phone
+}
+
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
