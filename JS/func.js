@@ -877,11 +877,21 @@ console.log(solution('cded', ''))
 
 console.clear();
 function createPhoneNumber(numbers){
-  for (i=0; i<numbers.length; i++){
-    phone = numbers[2] && numbers[6] ;
-  //   phone = (numbers[0][1][2]) + '' + numbers[3][4][5]+ '-' + numbers[6][7][8][9];
+  let phone = '';
+  let gon = '';
+  let gons = '';
+  let phonees = '';
+  for (i=0; i< numbers.length - 7; i++){
+    phone += numbers[i];
   }
-  return phone
+  for (i=3; i< numbers.length-4; i++){
+    gon += numbers[i] ;
+  }
+  for (i=6; i< numbers.length; i++){
+    gons += numbers[i] ;
+  }
+ phonees = '(' + phone + ')' + ' ' + gon + '-' + gons;
+  return phonees
 }
 
 console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
