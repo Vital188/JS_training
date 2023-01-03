@@ -982,17 +982,30 @@ console.clear()
 
 multiplicationTable = function(size) {
 let top = [];
+let double = size*size;
 let newArr = [];
-let bet = size * 1;
-for (let i = 1; i <= size; i++){
-  for (let p=1; p <=bet; p++){
-  top[i] += i*p;
-   bot = Array.from(top)
+let dog = [];
+let bet = size;
+for (let p=0; p <= size*bet; p++){
+//   top[p] = p*1
 
+
+
+for (let i = 1; i <= bet; i++)
+for (let i = 1; i <= size; i++){
+    
+  dog += [i*i]
 }}
+
+bot = Array.from(dog)
+
+//  
+
 for (let i = 0; i < bot.length; i += size) {
-  newArr.push(bot.slice(i, i + size));
+  newArr.push(bot.slice(i, i + size));}
+
+return dog
 }
-return top
-}
+
+// }
 console.log(multiplicationTable(4))
