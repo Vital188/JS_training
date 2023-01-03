@@ -972,6 +972,8 @@ return celebration
 
 
 console.log(newYearCelebrations("19:44",[545, 1320]))
+
+console.clear()
 // [
 //   470,  530,  590,  650,
 //   710,  770,  830,  890,
@@ -979,6 +981,18 @@ console.log(newYearCelebrations("19:44",[545, 1320]))
 // ]
 
 multiplicationTable = function(size) {
-  // insert code here
+let top = [];
+let newArr = [];
+let bet = size * 1;
+for (let i = 1; i <= size; i++){
+  for (let p=1; p <=bet; p++){
+  top[i] += i*p;
+   bot = Array.from(top)
+
+}}
+for (let i = 0; i < bot.length; i += size) {
+  newArr.push(bot.slice(i, i + size));
 }
-(multiplicationTable(3), [[1,2,3], [2,4,6], [3,6,9]]);
+return top
+}
+console.log(multiplicationTable(4))
