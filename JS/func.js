@@ -895,3 +895,90 @@ function createPhoneNumber(numbers){
 }
 
 console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+
+console.clear();
+
+function powersOfTwo(n){
+  let powers = [];
+  while (n > -1) {
+    // gap += num 
+   n = n-1;
+    powers[n] += 2**[n];
+     
+  }
+
+return powers;
+}
+
+console.log(powersOfTwo(4))
+
+function summation (num) {
+  let bolt = '';
+  // let gap = [];
+  while (num > 0) {
+  // gap += num 
+  bolt += Number(num);
+  num = num-1;
+}
+return bolt
+}
+
+console.log(summation(8));
+function powersOfTwo(n){
+  let arr = [];
+  for(let i=0; i<=n; i++)
+    arr[i] = 2**i;
+  return arr;
+}
+
+console.clear();
+
+function newYearCelebrations(takeOffTime, minutes) {
+  abba = Array.from(takeOffTime);
+  totalHour = '';
+  totalMinute = '';
+  timezone = [];
+  total = [];
+  totalTime = [];
+  pot = [];
+  let celebration = 0;
+  let zone = 0;
+  zone = minutes.length;
+for (let i = 0; i < takeOffTime.length - 3; i++) {
+  totalHour += takeOffTime[i]
+  hour = (23 - totalHour) * 60;}
+for (let i = 3; i < takeOffTime.length; i++) {
+  totalMinute += takeOffTime[i]
+  minute = 60 - totalMinute;
+  total = hour + minute;
+  if (total == 1440) {total = 0}
+}
+for (let i = 0; i < minutes.length; i++) {
+  timezone[i] = minutes[i]+60;}
+for (let i=0; i<zone; i++){
+  totalTime[i] = total + [i+1]*60;
+
+if (timezone[i] <= totalTime[i]) {celebration++}
+}
+if (total == 0) {celebration = celebration -1};
+
+if (total <= minutes[0] ) {celebration = celebration + 1};
+
+
+if (celebration == 0) {celebration = 1}
+
+return celebration
+}  
+
+
+console.log(newYearCelebrations("19:44",[545, 1320]))
+// [
+//   470,  530,  590,  650,
+//   710,  770,  830,  890,
+//   950, 1010, 1070, 1130
+// ]
+
+multiplicationTable = function(size) {
+  // insert code here
+}
+(multiplicationTable(3), [[1,2,3], [2,4,6], [3,6,9]]);
