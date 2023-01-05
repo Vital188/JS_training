@@ -986,26 +986,30 @@ let double = size*size;
 let newArr = [];
 let dog = [];
 let bet = size;
-for (let p=0; p <= size*bet; p++){
+// for (let p=0; p <= size*bet; p++){
 //   top[p] = p*1
 
 
 
 for (let i = 1; i <= bet; i++)
-for (let i = 1; i <= size; i++){
+for (let s = 1; s <= size; s++){
     
-  dog += [i*i]
-}}
+  dog += [i*s]
+}
+vok = Number(dog);
 
-bot = Array.from(dog)
+var myArr = String(dog).split("").map((dog)=>{
+  return Number(dog)
+})
+bot = Array.from(myArr);
 
 //  
 
 for (let i = 0; i < bot.length; i += size) {
   newArr.push(bot.slice(i, i + size));}
 
-return dog
+return newArr
 }
 
 // }
-console.log(multiplicationTable(4))
+console.log(multiplicationTable(3))
