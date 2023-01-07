@@ -981,8 +981,6 @@ console.clear()
 // ]
 
 multiplicationTable = function(size) {
-let top = [];
-let double = size*size;
 let newArr = [];
 let dog = [];
 let bet = size;
