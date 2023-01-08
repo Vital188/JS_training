@@ -974,11 +974,7 @@ return celebration
 console.log(newYearCelebrations("19:44",[545, 1320]))
 
 console.clear()
-// [
-//   470,  530,  590,  650,
-//   710,  770,  830,  890,
-//   950, 1010, 1070, 1130
-// ]
+
 
 multiplicationTable = function(size) {
 let newArr = [];
