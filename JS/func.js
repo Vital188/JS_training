@@ -1006,4 +1006,29 @@ return newArr
 //   return r
 // }
 
-console.log(multiplicationTable(8))
+console.log(multiplicationTable(4))
+
+console.clear()
+
+function createDict(keys, values){
+  let opel = keys.concat(values);
+ let newArrays = [];
+ krot = keys.length
+ newArrss = [];
+//   let opelis = '';
+//   for (let p=0; p < keys.length; p++) 
+  for (let i=0; i < opel.length; i ++){
+  newArrss.push(i, i + 3);} 
+  
+//  if (values.length == keys.length) {opel += keys[p] + ':'+ values[i]}
+//  else if (values.length > keys.length) {values[i] = null}
+
+// opelis = opel.join(values)
+
+newArrays = keys.map((e, i) => e + ':' + values[i]);
+
+ return newArrays
+
+}
+
+console.log(createDict(['a', 'b', 'c', 'd'], [1, 2, 3]))
