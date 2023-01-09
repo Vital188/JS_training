@@ -980,30 +980,30 @@ multiplicationTable = function(size) {
 let newArr = [];
 let dog = [];
 let bet = size;
-// for (let p=0; p <= size*bet; p++){
-//   top[p] = p*1
-
-
-
 for (let i = 1; i <= bet; i++)
 for (let s = 1; s <= size; s++){
-    
-  dog += [i*s]
+  dog.push(i*s)
 }
-vok = Number(dog);
 
-var myArr = String(dog).split("").map((dog)=>{
-  return Number(dog)
-})
-bot = Array.from(myArr);
-
-//  
-
-for (let i = 0; i < bot.length; i += size) {
-  newArr.push(bot.slice(i, i + size));}
+for (let i = 0; i < dog.length; i += size) {
+  newArr.push(dog.slice(i, i + size));}
 
 return newArr
 }
 
 // }
-console.log(multiplicationTable(3))
+
+
+// multiplicationTable = function(size) {
+//   let r = []
+//   for(let i = 1; i<=size; i++){
+//     let x = []
+//     for(let j = 1; j<=size; j++){
+//       x.push(i*j)
+//     }
+//     r.push(x)
+//   }
+//   return r
+// }
+
+console.log(multiplicationTable(8))
