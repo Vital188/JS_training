@@ -1010,6 +1010,15 @@ console.log(multiplicationTable(4))
 
 console.clear()
 
+function litres(time) {
+  let drinks = 0;
+  drinks = Math.floor(time * 0.5);
+  return 'should return ' + drinks + ' litre' 
+} 
+
+console.log(litres(1.4))
+
+
 function createDict(keys, values){
   let opel = keys.concat(values);
  let newArrays = [];
@@ -1035,10 +1044,56 @@ console.log(createDict(['a', 'b', 'c', 'd'], [1, 2, 3]))
 
 console.clear()
 
-function litres(time) {
-  let drinks = 0;
-  drinks = Math.floor(time * 0.5);
-  return 'should return ' + drinks + ' litre' 
-} 
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  let rezik = [];
 
-console.log(litres(1.4))
+  rezik = birds.filter(function(gees){
+    return gees != "African" && gees != "Pilgrim" && gees != "Roman Tufted" && gees != "Toulouse" && gees != "Steinbacher";
+  // let _difference = new Set([birds]);
+  // for (const elem of _difference) {
+  //   if (_difference.has('African', "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher")) {
+  //     _difference.delete('African', "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher");}
+  //     rezik = Array.from(_difference)
+   
+  })
+  return rezik;  
+}
+
+
+function gooseFilter (birds) {
+let rezik = [];
+
+rezik = birds.filter(function(gees){
+return gees != "African" && gees != "Pilgrim" && gees != "Roman Tufted" && gees != "Toulouse" && gees != "Steinbacher";
+})
+return rezik;  
+}
+console.log(gooseFilter(["Mallard", "Mallard", "Hook Bill", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(b => !geese.includes(b));
+};
+
+console.clear()
+
+function getSum( a,b )
+{
+  let suma = 0;
+  if (a < b) {
+   for (let i = a; i <= b; i++){
+    suma += i ;
+   }}
+   else if (a > b) {
+    for (let i = b; i <= a; i++){
+     suma += i ;
+    }}
+    else if (a == b) {
+      
+       suma = a ;
+      }
+   return suma
+}
+
+console.log(getSum(-5, -5))
