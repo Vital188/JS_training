@@ -1032,3 +1032,13 @@ newArrays = keys.map((e, i) => e + ':' + values[i]);
 }
 
 console.log(createDict(['a', 'b', 'c', 'd'], [1, 2, 3]))
+
+console.clear()
+
+function litres(time) {
+  let drinks = 0;
+  drinks = Math.floor(time * 0.5);
+  return 'should return ' + drinks + ' litre' 
+} 
+
+console.log(litres(1.4))
