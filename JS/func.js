@@ -1097,3 +1097,4 @@ function getSum( a,b )
 }
 
 console.log(getSum(-5, -5))
+
