@@ -1098,3 +1098,24 @@ function getSum( a,b )
 
 console.log(getSum(-5, -5))
 
+function reverseWords(str){
+split = str.split(' ');
+reversed = split.reverse();
+join = reversed.join(' ');
+finalString = join.toString();
+
+return finalString
+}
+
+console.log(reverseWords("hello world!"))
+
+function createDict(keys, values){
+let a = keys;
+let b = values;
+let c = [a] + b
+
+
+return c
+}
+
+console.log(createDict(['a', 'b', 'c', 'd'], [1, 2, 3]))
