@@ -1109,13 +1109,21 @@ return finalString
 
 console.log(reverseWords("hello world!"))
 
+console.clear()
+
 function createDict(keys, values){
+let c = [];
 let a = keys;
 let b = values;
-let c = [a] + b
+let q = keys.length - values.length;
+if ( q == 0) {
+for (let i = 0; i < keys.length; i++) {
+c.push(keys[i] + ': ' +  i)
+}}
 
+let d = c.toString()
 
 return c
 }
 
-console.log(createDict(['a', 'b', 'c', 'd'], [1, 2, 3]))
+console.log(createDict(['a', 'b', 'c'], [1, 2, 3]))
