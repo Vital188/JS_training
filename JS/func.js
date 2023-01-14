@@ -1118,7 +1118,7 @@ let b = values;
 let q = keys.length - values.length;
 if ( q == 0) {
 for (let i = 0; i < keys.length; i++) {
-c.push(keys[i] + ': ' +  i)
+c.push(keys [i] + ': ' +  i)
 }}
 
 let d = c.toString()
