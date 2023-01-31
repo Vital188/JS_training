@@ -1145,5 +1145,69 @@ console.log(createArray(3))
 console.clear()
 
 function evenOrOdd(number) {
-  
+  let decision = '';
+  if (number % 2 == 0) {decision = 'even';}
+  else if (number % 2 != 0) {decision = 'odd';}
+  else if (number == 0) {decision = 'even';}
+
+  return decision
 }
+
+console.log(evenOrOdd(0))
+
+console.clear();
+
+function sumCubes(n){
+  let dicis = 0;
+  for (let i=0; i<=n; i++) 
+    dicis += i**3;
+  return dicis;
+}
+
+console.log(sumCubes(4))
+
+console.clear()
+
+function setReducer(input) {
+let sorted_arr = input.slice().sort(); 
+  let results = [];
+  for (let i = 0; i < sorted_arr.length - 1; i++) {
+    if (sorted_arr[i + 1] == sorted_arr[i]) {
+      results.push(sorted_arr[i]);
+    }
+  }
+  return results;
+}
+
+console.log(setReducer([5, 8, 1, 0, 5, 0, 6, 5, 8, 4, 4, 9, 7]))
+
+console.clear()
+
+function _if(bool, func1, func2) {
+  bool ? func1() : func2()
+  }
+
+// console.log(_if(true, 'true', 'false'))
+
+console.clear();
+
+function buildString(...template){
+  return `I like ${template.join(", ")}!`
+}
+
+buildString = (...template) => `I like ${template.join(", ")}!`
+
+console.log(buildString('Cheese','Milk','Chocolate'))
+
+console.clear();
+
+function largest(n, array) {
+  let improve = [];
+  let newarray = [];
+  improve = array.sort(function(a, b){return b-a});
+  improve.splice(n);
+  newarray = improve.sort(function(a, b){return a-b});
+  return newarray;
+}
+
+console.log(largest(7, [9, 1, 50, 22, 3, 13, 2, 63, 5]))
