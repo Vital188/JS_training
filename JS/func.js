@@ -1211,3 +1211,48 @@ function largest(n, array) {
 }
 
 console.log(largest(7, [9, 1, 50, 22, 3, 13, 2, 63, 5]))
+
+console.clear();
+
+function orderWeight(strng) {
+  let com  = [];
+  let copy  = [];
+  let copy2 = [];
+  com = strng.split(" ");
+  copy = Array.from(com);
+  let answer = '';
+  let numbe = '';
+
+  let nums = copy.map(function(str) {
+  return parseInt(str); });
+  nums.sort()
+  com = nums.map(el => el.toString().split('').reduce((sum, b) => sum + +b, 0));
+  indices = [...com.keys()].sort((a, b) => com[a] - com[b]);
+  [nums, com] = [nums, com].map(a => indices.map(i => a[i]));
+  
+  numbe = nums.toString();
+  // copy2 = Array.from(numbe);
+  answer = numbe.replaceAll(",", " ");
+
+  return nums
+}
+
+function orderWeight(strng) {
+  const sum = (str)=>str.split('').reduce((sum,el)=>(sum+(+el)),0);
+   function comp(a,b){
+     let sumA = sum(a);
+     let sumB = sum(b);
+     return sumA === sumB ? a.localeCompare(b) : sumA - sumB;
+    };
+  return strng.split(' ').sort(comp).join(' ');
+ }
+
+console.log(orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"))
+
+// for (let value in nums) {
+  //   while (value) {
+  //     sum += value % 10;
+  //     value = Math.floor(value / 10);
+  // }
+  // com += sum
+  // }
