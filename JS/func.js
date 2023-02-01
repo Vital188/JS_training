@@ -583,7 +583,7 @@ function betterThanAverage(classPoints, yourPoints) {
   let summa = 0;
   let classPointslength = 0;
   let vidurkis = 0;
-  let oleg = "";
+  let converting = "";
   if (Array.isArray()) {
     return false;
   }
@@ -593,9 +593,9 @@ function betterThanAverage(classPoints, yourPoints) {
     classPointslength = classPoints.length + 1;
     vidurkis = summa / classPointslength;
 
-    yourPoints >= vidurkis ? (oleg = true) : (oleg = false);
+    yourPoints >= vidurkis ?  converting = true :  converting = false;
   }
-  return oleg;
+  return converting;
 }
 
 console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69));
@@ -838,11 +838,11 @@ console.clear()
 
 function changer(str) { 
 papik  = Array.from(str)
-let oleg = '';
-let papikian = 0;
+let converting = '';
+let finalresult = 0;
 const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 alphabet.map((index) => {
-  papikian += papik[index] })
+  finalresult += papik[index] })
  
 
 return papik
@@ -1217,7 +1217,6 @@ console.clear();
 function orderWeight(strng) {
   let com  = [];
   let copy  = [];
-  let copy2 = [];
   com = strng.split(" ");
   copy = Array.from(com);
   let answer = '';
@@ -1231,7 +1230,6 @@ function orderWeight(strng) {
   [nums, com] = [nums, com].map(a => indices.map(i => a[i]));
   
   numbe = nums.toString();
-  // copy2 = Array.from(numbe);
   answer = numbe.replaceAll(",", " ");
 
   return nums
@@ -1256,3 +1254,47 @@ console.log(orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"))
   // }
   // com += sum
   // }
+
+  console.clear();
+
+  function isInStrictMode() {
+    return !this
+  }
+
+console.log(isInStrictMode(true));
+
+// "use strict";
+function isEmpty(value) {
+  return value !== undefined || value !== null || value !== '';
+}
+
+console.log(isEmpty());
+
+console.clear();
+
+function changer(str) { 
+  newArray  = Array.from(str);
+  strArr = str.slice(0,3);
+  papikik = str.slice(3,5);
+  let converting = '';
+  let finalresult = '';
+  let replacing = '';
+
+  function convert(String) {
+    let results = '';
+    for (const c of String) {
+        results += (((parseInt(c, 36) + 1)  % 36) || 10).toString(36);
+    }return results
+}
+ converting = convert(str);
+replacing = converting.replaceAll(/a/g, 'A');
+replacing = converting.replaceAll(/e/g, 'E');
+replacing = converting.replaceAll(/i/g, 'I');
+replacing = converting.replaceAll(/o/g, 'O');
+replacing = converting.replaceAll(/u/g, 'U');
+finalresult = replacing 
+
+return finalresult
+  }
+  
+  console.log(changer('Hello World'))
