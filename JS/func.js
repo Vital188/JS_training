@@ -1279,10 +1279,11 @@ function changer(str) {
   let converting = '';
   let finalresult = '';
   let replacing = '';
+  array = Array.from(str)
 
-  function convert(String) {
+  function convert(string) {
     let results = '';
-    for (const c of String) {
+    for (const c of string) {
         results += (((parseInt(c, 36) + 1)  % 36) || 10).toString(36);
     }return results
 }
