@@ -1272,30 +1272,88 @@ console.log(isEmpty());
 
 console.clear();
 
-function changer(str) { 
-  newArray  = Array.from(str);
-  strArr = str.slice(0,3);
-  papikik = str.slice(3,5);
-  let converting = '';
-  let finalresult = '';
-  let replacing = '';
-  array = Array.from(str)
 
-  function convert(string) {
-    let results = '';
-    for (const c of string) {
-        results += (((parseInt(c, 36) + 1)  % 36) || 10).toString(36);
-    }return results
+  // newArray  = Array.from(str);
+  // strArr = str.slice(0,3);
+  // papikik = str.slice(3,5);
+  // let converting = '';
+  // let finalresult = '';
+  // let replacing = '';
+  // array = Array.from(str);
+  // str = str.replace(/[a-z]/gi;
+function changer(str) {
+  str = str.toLowerCase(); 
+  return str.replace(/[a-z]/gi, function convert(string) {
+    // let results = '';
+    // for (const c of string) {
+        string = String.fromCharCode(string.charCodeAt(0)+1);
+        if (string=='{' || string=='[') string = 'a';
+  if (/[aeiuo]/.test(string)) string = string.toUpperCase();
+    // }
+    return string
+  });
 }
- converting = convert(str);
-replacing = converting.replaceAll(/a/g, 'A');
-replacing = converting.replaceAll(/e/g, 'E');
-replacing = converting.replaceAll(/i/g, 'I');
-replacing = converting.replaceAll(/o/g, 'O');
-replacing = converting.replaceAll(/u/g, 'U');
-finalresult = replacing 
+//  converting = convert(str);
+// replacing = converting.replaceAll(/a/g, 'A');
+// replacing = converting.replaceAll(/e/g, 'E');
+// replacing = converting.replaceAll(/i/g, 'I');
+// replacing = converting.replaceAll(/o/g, 'O');
+// replacing = converting.replaceAll(/u/g, 'U');
+// finalresult = replacing 
 
-return finalresult
+// return finalresult
+  // }
+
+
+  // str = str.replace(/[a-z]/gi, function(char) {
+  //   char = String.fromCharCode(char.charCodeAt(0)+1);
+  //   if (char=='{' || char=='[') char = 'a';
+  //   if (/[aeiuo]/.test(char)) char = char.toUpperCase();
+  //   return char;
+  // });
+
+  // const changer = str =>
+  // str
+  //   .toLowerCase()
+  //   .replace(/[a-z]/g, m => String.fromCharCode((m.charCodeAt(0) - 96) % 26 + 97)) 
+  //   .replace(/[aeiou]/g, m => m.toUpperCase())
+
+  // const letters = "abcdEefghIijklmnOopqrstUuvwxyzA";
+  // const changer = s => s.replace( /[a-z]/gi, c => letters[ letters.indexOf(c.toLowerCase())+1 ] );
+
+  // console.log(changer('Cat30'))
+
+  console.clear();
+
+  function booleanToString(b){
+    let bb = ''
+    if (b = "true") {bb =  `'When we pass in true, we want the string ${b} as output'`}
+    else if (b = "false") {bb = `'When we pass in false, we want the string ${b} as output'`}
+    return bb
   }
+
+  console.log(booleanToString("true"))
+
   
-  console.log(changer('Hello World'))
+console.clear();
+
+const arr = [1, 2, 3];
+arr.push(arr.shift());
+// for (let index = 0; index < arr.length; index++) {
+//   arr[0] = arr[arr.length - 1]
+//   arr[index] = arr[index+1] ;
+// }
+
+console.log(arr);
+
+console.clear();
+
+function arre(n) {
+ 
+
+return  n.replace(/[A-z]/g, m => String.fromCharCode((m.charCodeAt(0)+1)))
+return  n.replace(/[A-z]/g, m => String.fromCharCode((m.charCodeAt(0)- 96) % 26 + 97))
+
+};
+
+console.log(arre('AbbAgibhv'))
