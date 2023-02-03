@@ -1357,3 +1357,19 @@ return  n.replace(/[A-z]/g, m => String.fromCharCode((m.charCodeAt(0)- 96) % 26 
 };
 
 console.log(arre('AbbAgibhv'))
+
+console.clear();
+
+function getAverage(marks){
+  let suma = 0;
+  let average = 0;
+  for (let i = 0; i < marks.length; i++){
+    suma += marks[i]
+    average = Math.floor(suma/marks.length);
+  }
+  return average
+}
+
+console.log(getAverage([1,2,3,4,5,]))
+
+console.clear()
