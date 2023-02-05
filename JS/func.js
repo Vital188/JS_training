@@ -1373,3 +1373,17 @@ function getAverage(marks){
 console.log(getAverage([1,2,3,4,5,]))
 
 console.clear()
+
+function trim(str, size) {
+  lengt = str.length;
+  result = '';
+  if (size >= lengt) { result = str}
+  else if (size > 3) { result = str.slice(0, size - 3) + ('...')}
+  else { result = str.slice(0, size) + ('...')}
+  
+  return result;
+}
+
+console.log(trim("vAf FOX", 3));
+
+console.clear()
