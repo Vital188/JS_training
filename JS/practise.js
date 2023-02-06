@@ -11,5 +11,4 @@ console.clear();
 function race(v1, v2, g) {
   let time = [];
 if (v1 >= v2) {tiem = null} 
-
 }
