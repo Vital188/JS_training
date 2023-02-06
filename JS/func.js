@@ -1387,3 +1387,34 @@ function trim(str, size) {
 console.log(trim("vAf FOX", 3));
 
 console.clear()
+
+Array.prototype.numberOfOccurrences = function(pap) {
+  let results = 0;
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] == pap) {results++}
+  }
+  return results
+}
+
+console.log(arr.numberOfOccurrences(4))
+
+console.clear();
+
+function nearestSq(n){
+  let results = '';
+  let x = Math.sqrt(n)
+  max = Math.ceil(x);
+  min = Math.floor(x);
+  Maxdif = max*max - n;
+  Mindif = n - min*min;
+  dif = Maxdif - Mindif;
+  if (dif == 0) {results = n}
+  else if (dif < 0 ) {results = max*max }
+  else if (dif > 0 )  (results = min*min);
+  return `nearestSq(${n}) to equal ${results}` 
+}
+
+console.log(nearestSq(106))
+
+console.clear();
+4
