@@ -1417,4 +1417,4 @@ function nearestSq(n){
 console.log(nearestSq(106))
 
 console.clear();
-4
+
