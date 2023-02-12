@@ -197,5 +197,5 @@ console.clear();
 const spalvos = ('color: #655652 #PP00PP #LL00CV #LL00CC #ffffff #ccffff #99ff66 #66ff33 #99ff00 #66ff33 #990000 ');
 
 console.log(spalvos);
-console.log('hello world', spalvos);
+console.log('hello world',spalvos);
 console.log('%c hello world', 'color: #99ff66; font-size: 18px  \x1b[0m');
