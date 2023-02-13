@@ -26,3 +26,16 @@ function hammingDistance (a, b) {
 }
 
 console.log(hammingDistance('', ''))
+
+console.clear();
+
+function solve(s){
+upper = (s.match(/[A-Z]/g)|| []).length; 
+lower = (s.match(/[a-z]/g)|| []).length;
+numb = (s.match(/[1-9]/g)|| []).length;
+special = (s.match(/[!@#$%^&*()^_+\-=\[\]{};'`:"~\\|,l.<>\/?$]/gi)|| []).length;
+result = [upper, lower, numb, special];
+return result
+ }
+
+console.log(solve("$Cnl)Sr<7bBW-&qLHI!mY41ODe"))
