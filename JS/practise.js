@@ -39,3 +39,9 @@ return result
  }
 
 console.log(solve("$Cnl)Sr<7bBW-&qLHI!mY41ODe"))
+
+console.clear();
+
+function sumOfMinimums(arr) {
+  // your code here
+}
