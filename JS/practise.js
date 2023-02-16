@@ -62,3 +62,44 @@ function sumOfMinimums(arr) {
 console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
 
 console.clear();
+
+copy = Array.from(Array(10).keys())
+
+function setReducer(input) {
+let copy = [];
+let pot = [];
+let doubled = [];
+let rez = [];
+let hot = [];
+// while (copy.length = 1) {
+  
+// copy = input.forEach(element => {
+//   (input[element] || 0) + 1;})
+//   // if (copy.length === 1) 
+//   //   break;}
+ 
+ doubled = new Set(input)
+
+input.forEach(element => {
+  pot[element] = (pot[element] || 0) + 1;
+});
+// pot.forEach(element => {
+//   doubled[element] = (doubled[element] || 0) + 1;
+// });
+
+// doubled.forEach(element => {
+//   rez[element] = (rez[element] || 0) + 1;
+// });
+
+// rez.forEach(element => {
+//   hot[element] = (hot[element] || 0) + 1;
+// });
+
+// for (let i = 0; i < input.length; i++){
+// copy = ++input[i]
+// }
+return pot 
+}
+
+
+console.log(setReducer([9, 4, 1, 1, 1, 2, 3, 9, 4, 6, 2]))
