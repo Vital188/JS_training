@@ -116,18 +116,33 @@ console.clear();
 
 function newYearCelebrations(takeOffTime, minutes) {
   abba = Array.from(takeOffTime);
-  h = Number(takeOffTime.slice(0,2));
-  m = Number(takeOffTime.slice(3,5));
+  let h = Number(takeOffTime.slice(0,2));
+  let m = Number(takeOffTime.slice(3,5));
+  if ( h == 0) {h = 0+23};
+  if ( m == 0) {m = 0+60};
   totalHour = 23 - h;
+
   totalMinutes = 60 - m;
   let hour = [];
-  
+  let celebration = 0;
+  let celeb = 0;
+  let index = []
+  let celebr = 0
+  // if (minutes == 0) {celeb = 0 +1}
 
   for (let i = 0; i < minutes.length ; i++) {
       // totalHour[i] = minutes[i]
-      hour[i] = 60 * (totalHour + [i]) + totalMinutes;
+      index = totalHour + (i);
+      hour[i] = 60 * index + totalMinutes;
+      if (hour[0] > 0 ) {celebration = 1};
+      if (hour[i] <= minutes[i]) {celeb = celebration++};
+      
+      // else {celebr = celebration}
+      if (celebration == 0) {celebration = 1}
     }
-  
+    
+    // else {celeb = celebration}
+    
 
 //   totalHour = '';
 //   totalMinute = '';
@@ -164,7 +179,77 @@ function newYearCelebrations(takeOffTime, minutes) {
 
 // if (celebration == 0) {celebration = 1}
 
-return  hour
+return celeb
 }  
 
 console.log(newYearCelebrations("23:35",[60, 90, 140]))
+
+console.clear()
+
+function squareSum(numbers){
+  let pot = 0;
+numbers.map(x => pot += x*x)
+return pot  
+}
+
+console.log(squareSum([]))
+
+console.clear()
+
+function century(year) {
+  let result = '';
+  result = Math.ceil(year/100)
+  return result;
+}
+
+console.log(century(17))
+
+console.clear()
+
+function isPangram(string){
+  let str = string.toLowerCase();
+  text = str.replaceAll(/[!@#$%^&*()^_+\-=\[\]{};'` 0123456789:"~\\|,.<>\/?$]/g, '')
+  let result = [...new Set(text)].length
+  if(result == 26)
+     {
+      return true;
+     }
+   else
+     {
+     return false;
+     }
+   
+  }
+
+  function isPangram(string){
+    return (string.match(/([a-z])(?!.*\1)/ig) || []).length === 26;
+  }
+//   // str = string.toLowerCase();
+//   res = string.replace(/[^A-z\.]+/g, "");
+//   for (let i=0; i<res.length; i++) {
+//     if ( res.indexOf(res[i]) !== res.lastIndexOf(res[i]) ) {
+//       return false; // repeats
+//     }
+//   }
+// return true;
+
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog."))
+
+console.clear()
+
+
+
+function uniTotal (string) {
+  let str = string.split('').map(e => e.charCodeAt(0))
+  let p = 0;
+  for (let i = 0; i < str.length; i++) {
+    p += str[i]
+  }
+  if (string == "") {p = 0}
+  return p
+  }
+
+  console.log(uniTotal('aaa'))
+  
+  console.clear();
