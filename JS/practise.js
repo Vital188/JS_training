@@ -103,3 +103,68 @@ return pot
 
 
 console.log(setReducer([9, 4, 1, 1, 1, 2, 3, 9, 4, 6, 2]))
+
+function createDict(keys, values){
+  let obj={};
+  for (let i=0;i<keys.length;i++){
+  obj[keys[i]]=values[i]!=undefined?values[i]:null;
+  }
+  return obj
+}
+
+console.clear();
+
+function newYearCelebrations(takeOffTime, minutes) {
+  abba = Array.from(takeOffTime);
+  h = Number(takeOffTime.slice(0,2));
+  m = Number(takeOffTime.slice(3,5));
+  totalHour = 23 - h;
+  totalMinutes = 60 - m;
+  let hour = [];
+  
+
+  for (let i = 0; i < minutes.length ; i++) {
+      // totalHour[i] = minutes[i]
+      hour[i] = 60 * (totalHour + [i]) + totalMinutes;
+    }
+  
+
+//   totalHour = '';
+//   totalMinute = '';
+//   timezone = [];
+//   total = [];
+//   totalTime = [];
+//   pot = [];
+//   let hour = []
+//   let celebration = 0;
+//   let zone = 0;
+
+//   for (let i = 0; i < minutes.length; i++)
+//   zone = minutes.length;
+// for (let i = 0; i < takeOffTime.length ; i++) {
+//   totalHour += takeOffTime[i]
+//   hour = (24 - totalHour) * 60;}
+// for (let i = 3; i < takeOffTime.length; i++) {
+//   totalMinute += takeOffTime[i]
+//   minute = 60 - totalMinute;
+//   total = hour + minute;
+//   if (total == 1440) {total = 0}
+// }
+// for (let i = 0; i < minutes.length; i++) {
+//   timezone[i] = minutes[i]+60;}
+// for (let i=0; i<zone; i++){
+//   totalTime[i] = total + [i+1]*60;
+
+// if (timezone[i] <= totalTime[i]) {celebration++}
+
+// if (total == 0) {celebration = celebration -1};
+// }
+// if (total <= minutes[0] ) {celebration = celebration + 1};
+
+
+// if (celebration == 0) {celebration = 1}
+
+return  hour
+}  
+
+console.log(newYearCelebrations("23:35",[60, 90, 140]))
