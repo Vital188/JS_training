@@ -253,3 +253,7 @@ function uniTotal (string) {
   console.log(uniTotal('aaa'))
   
   console.clear();
+
+  function addLength(str) {
+//start-here
+}
