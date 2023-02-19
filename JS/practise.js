@@ -255,5 +255,64 @@ function uniTotal (string) {
   console.clear();
 
   function addLength(str) {
-//start-here
+    let result = [];
+    let final = [];
+    let rez = ""
+    let words = str.split(" ");
+for (let i = 0; i < words.length; i++) {
+  rez += words[i] + ' ' + words[i].length + ',';
+  result = rez.split(",")
+  final = result.slice(0, -1)
 }
+
+return final
+}
+
+function addLength(str){
+  return str.split(' ').map(function(v){return v+' '+v.length})
+}
+
+console.log(addLength("apple ban"))
+
+console.clear();
+
+// copy = Array.from(Array(10).keys())
+
+function setReducer(input) {
+let copy = [];
+let pot = [];
+let doubled = [];
+let rez = [];
+let hot = [];
+// while (copy.length = 1) {
+  
+// copy = input.forEach(element => {
+//   (input[element] || 0) + 1;})
+//   // if (copy.length === 1) 
+//   //   break;}
+ 
+ doubled = new Set(input)
+
+input.forEach(element => {
+  pot[element] = (pot[element]|| 0) + 1;
+});
+// pot.forEach(element => {
+//   doubled[element] = (doubled[element] || 0) + 1;
+// });
+
+// doubled.forEach(element => {
+//   rez[element] = (rez[element] || 0) + 1;
+// });
+
+// rez.forEach(element => {
+//   hot[element] = (hot[element] || 0) + 1;
+// });
+
+// for (let i = 0; i < input.length; i++){
+// copy = ++input[i]
+// }
+return pot
+}
+
+
+console.log(setReducer([9, 4, 1, 1, 1, 2, 3, 9, 4, 6, 2]))
