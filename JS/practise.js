@@ -315,4 +315,38 @@ return pot
 }
 
 
-console.log(setReducer([9, 4, 1, 1, 1, 2, 3, 9, 4, 6, 2]))
+console.log(setReducer([9, 4, 1, 1, 1, 2, 3, 9, 4, 6, 2]));
+
+console.clear();
+
+function race(v1, v2, g) {
+  let time = [];
+  let difference = v2-v1;
+  let percent = g/difference;
+  hour = Math.floor(percent);
+  minute = (percent - hour) *60;
+  min = Math.floor((percent - hour) *60);
+  sec = Math.floor((minute - min) * 60);
+if (v1 >= v2) {time = null} 
+else {time.push(hour,min, sec)}
+return time
+}
+
+console.log(race(720, 850, 37))
+
+console.clear();
+
+function formatWords(words){
+  let str = '';
+  str = words.toString();
+  let per = str.replaceAll(',', ', ')
+  const lastIndex = per.lastIndexOf(',');
+  const replacement = ' and';
+  const replaced =
+  per.slice(0, lastIndex) + 
+  replacement + 
+  per.slice(lastIndex+1);
+  return replaced
+}
+
+console.log(formatWords(['one', '', 'three']))
