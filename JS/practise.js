@@ -338,15 +338,37 @@ console.clear();
 
 function formatWords(words){
   let str = '';
-  str = words.toString();
-  let per = str.replaceAll(',', ', ')
-  const lastIndex = per.lastIndexOf(',');
+  let replaced =[];
+  let pok = []
   const replacement = ' and';
-  const replaced =
-  per.slice(0, lastIndex) + 
-  replacement + 
-  per.slice(lastIndex+1);
+  if (words == null || [] || '') {replaced = ""}
+ 
+  for (let i=0; i<words?.length; i++) {
+    if (words[i] == '') {pok = words.indexOf(words[i])
+      lap = words.splice(pok, 1)
+    }
+  }
+
+  for (let i=0; i<words?.length; i++) {
+    if (words[i] == '') {zok = words.indexOf(words[i])
+      lab = words.splice(zok, 1)
+    }
+  }
+ 
+  str = words?.toString();
+  // bot = str.replaceAll('', )
+  let per = str?.replaceAll(',', ', ')
+  let lastIndex = per?.lastIndexOf(',');
+  
+  // if (words.lenght = 1) {replaced = str;}
+ if (words?.length == 1) {replaced = str}
+ else if (words?.length > 1) {replaced = per.slice(0, lastIndex) + 
+    replacement + 
+    per.slice(lastIndex+1);}
+
   return replaced
 }
 
-console.log(formatWords(['one', '', 'three']))
+console.log(formatWords(['', '', 'three']))
+
+console.clear()
