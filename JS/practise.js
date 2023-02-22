@@ -371,4 +371,23 @@ function formatWords(words){
 
 console.log(formatWords(['', '', 'three']))
 
-console.clear()
+console.clear();
+
+function test(rep) {
+  
+let pot = rep.filter( r => r.length > 2 )
+let bot = rep.find( r => r.length > 2 )
+let got = rep.findIndex( r => r.length > 3 )
+let lop = []
+rep.forEach((item, i) => {rep[i] = item + 'as' })
+let text = "ABCDEFG"
+const myArr = Array.from(text)
+const dd = myArr.keys()
+let texts = "";
+for (let x of dd) {
+  texts += x + ', ';
+}
+return texts
+}
+
+console.log(test(['vv', 'ggg', 'ggg']))
