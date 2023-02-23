@@ -376,10 +376,17 @@ console.clear();
 function test(rep) {
   
 let pot = rep.filter( r => r.length > 2 )
+const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 let bot = rep.find( r => r.length > 2 )
 let got = rep.findIndex( r => r.length > 3 )
 let lop = []
-rep.forEach((item, i) => {rep[i] = item + 'as' })
+// rep.forEach((item, i) => {rep[i] = item + 'as' })
+let apple = [];
+ss = 0;
+for (let i=0; i < rep.length; i++){
+  if ( rep[i] % 5 === 0) {apple.push(rep[i])}
+}
+ss = apple.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 let text = "ABCDEFG"
 const myArr = Array.from(text)
 const dd = myArr.keys()
@@ -387,7 +394,21 @@ let texts = "";
 for (let x of dd) {
   texts += x + ', ';
 }
-return texts
+let suma = 0;
+  let average = 0;
+  for (let i = 0; i < rep.length; i++){
+    suma += rep[i]
+    average = Math.floor(suma/rep.length);
+  }
+  let pp = [];
+  let oo = [];
+  rep.push(rep.shift());
+  pp = rep.sort(function(a, b){return b-a})
+const items = ["a", "d", "x", "ww", "adieu", "clair"];
+oo = items.sort((a, b) => a.localeCompare(b));
+
+return oo
 }
 
-console.log(test(['vv', 'ggg', 'ggg']))
+console.log(test([5, 5.15, 55]))
+
