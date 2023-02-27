@@ -403,7 +403,7 @@ let suma = 0;
   let pp = [];
   let oo = [];
   rep.push(rep.shift());
-  pp = rep.sort(function(a, b){return b-a})
+  pp =  rep.sort(function(a, b){return b-a})
 const items = ["a", "d", "x", "ww", "adieu", "clair"];
 oo = items.sort((a, b) => a.localeCompare(b));
 
