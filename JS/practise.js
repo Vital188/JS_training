@@ -387,7 +387,7 @@ for (let i=0; i < rep.length; i++){
   if ( rep[i] % 5 === 0) {apple.push(rep[i])}
 }
 ss = apple.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-let text = "ABCDEFG"
+let text = "ABCDEFGs"
 const myArr = Array.from(text)
 const dd = myArr.keys()
 let texts = "";
